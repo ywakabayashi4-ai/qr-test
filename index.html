@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>QR復号リーダー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>QR復号リーダー</h1>
+  <video id="video" width="300" height="200" autoplay></video><br>
+  <input type="password" id="password" placeholder="復号パスワード"><br>
+  <button onclick="startScan()">読み取り開始</button>
+  <p id="result">結果がここに表示されます</p>
+
+  <!-- ライブラリ読み込み（CDN） -->
+  <script async src="https://docs.opencv.org/4.x/opencv.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+
+  <!-- アプリ本体 -->
+  <script src="app.js"></script>
+</body>
+</html>
