@@ -1,0 +1,9 @@
+{
+  "name": "QR復号リーダー",
+  "short_name": "QR Reader",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": []
+}
